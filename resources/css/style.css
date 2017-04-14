@@ -1,0 +1,74 @@
+body{
+  background-color: black;
+  color: seashell;
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  display: flex;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  margin: 69px;
+  width: 100%;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+  align-items: center;
+  z-index: 1;
+  background-color: black;
+}
+
+.teacozy{
+  display: flex;
+  flex-grow: 1;
+  padding-left: 10px;
+  font-family: cursive;
+  font-size: 50px;
+}
+nav{
+  display: flex;
+  padding-right: 80px;
+}
+nav span{
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+a{
+  color: seashell;
+  text-decoration: underline;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.mission{
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  background-image: url("../images/img-mission-background.jpg");
+
+}
+
+.statement{
+  display: flex;
+  height: 700px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+
+.miss2{
+  background-color: black;
+  width: auto;
+  height: auto;
+  font-weight: bold;
+}
