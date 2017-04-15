@@ -3,15 +3,17 @@ body{
   color: seashell;
   margin: 0px;
   padding: 0px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
 }
 
 header{
   display: flex;
   border-bottom: 1px solid seashell;
   position: fixed;
-  margin: 69px;
+  border-top: 69px;
   width: 100%;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
@@ -24,12 +26,10 @@ header{
   display: flex;
   flex-grow: 1;
   padding-left: 10px;
-  font-family: cursive;
-  font-size: 50px;
+  height: 50px;
 }
 nav{
   display: flex;
-  padding-right: 80px;
 }
 nav span{
   display: inline-block;
@@ -41,34 +41,70 @@ a{
   text-decoration: underline;
 }
 
-.container{
+.content{
   display: flex;
-  justify-content: center;
-  padding-top: 10px;
+  flex-direction: column;
 }
 
 .mission{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center; /*centers vertical*/
+  justify-content: center; /*centers horizontal*/
+  height: 700px;
   width: 1200px;
-  background-image: url("../images/img-mission-background.jpg");
+  background-image:url(../images/img-mission-background.jpg);
+  margin: auto; /*centers image*/
 
 }
 
-.statement{
+h2,
+h4{
+  display: inline-block; /*blocks vertical*/
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+  background-color: black; /*black bg for mission*/
+  width: 100%; /*extends black to max*/
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.tea{
   display: flex;
-  height: 700px;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.tea .flavors{
+  display: flex;
+  width: 1000px;
+  height: 500px;
+  font-size: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*align-content: space-between;*/
+
+}
+
+.item img{
+  display: flex;
+  width: 300px;
+  height: 200px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+.locations{
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  font-weight: bold;
-}
-
-
-.miss2{
-  background-color: black;
-  width: auto;
-  height: auto;
-  font-weight: bold;
+  background-image:url(../images/resources/img-locations-background.jpg);
+  width: 1200px;
+  height: 500px;
+  margin: auto;
 }
