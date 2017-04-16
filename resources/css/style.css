@@ -58,7 +58,7 @@ a{
 
 }
 
-h2,
+.mission h2,
 h4{
   display: inline-block; /*blocks vertical*/
   margin: 0px;
@@ -79,6 +79,18 @@ h4{
   padding-top: 20px;
 }
 
+.tea h2,
+h4{
+  display: inline-block; /*blocks vertical*/
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+  /*background-color: black; black bg for mission*/
+  /*width: 100%; extends black to max*/
+  font-weight: bold;
+  font-size: 28px;
+}
+
 .tea .flavors{
   display: flex;
   width: 1000px;
@@ -97,14 +109,41 @@ h4{
   padding-bottom: 10px;
   padding-right: 20px;
 }
-
+/*LOCATION*/
 .locations{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image:url(../images/resources/img-locations-background.jpg);
+  background-image:url(../images/img-locations-background.jpg);
   width: 1200px;
   height: 500px;
   margin: auto;
+  opacity: 1;
+}
+
+.area{
+  width: 100%;
+}
+
+.spot{
+  display: inline-block;
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  margin: 15px; 40px;
+  align-content: center;
+}
+
+/*CONTACT AND FOOTER INFO*/
+
+.contact {
+			max-height: 200px;
+}
+
+footer {
+    text-align: left;
+    padding-left: 20px;
+		font-size: 15px;
+
 }
